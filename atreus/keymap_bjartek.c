@@ -3,15 +3,15 @@
 #include "actionmap.h"
 #include "action_code.h"
 
-// some convenienve macros from https://github.com/audibleblink/atreus-firmware
+/* some convenienve macros from https://github.com/audibleblink/atreus-firmware */
 /* Enable Momentary Dual Function Modifiers */
 #define AC_TAP(layer, key)  ACTION_LAYER_TAP_KEY(layer, AC_##key)
 
 #define AC_TAPK(key1, key2)  ACTION_MODS_TAP_KEY(MOD_##key1, AC_##key2)
-// a macro for a layer switching key that can either be momentary or toggle
+/* a macro for a layer switching key that can either be momentary or toggle  */
 #define AC_TAPT(layer) ACTION_LAYER_TAP_TOGGLE(##layer)
 
-//a macro for oneshot mods
+/*a macro for oneshot mods */
 #define AC_OSM(key) ACTION_MODS_ONESHOT(MOD_##key)
 
 #define AC_CA ACTION_MODS(MOD_LALT | MOD_LCTL)
