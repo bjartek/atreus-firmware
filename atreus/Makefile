@@ -39,7 +39,6 @@
 #----------------------------------------------------------------------------
 
 # Set to /dev/cu.usbmodem1421 or whatever on Macs
-USB ?= /dev/ttyACM0
 USB ?= /dev/cu.usbmodem1441
 
 # Target file name (without extension).
@@ -56,7 +55,7 @@ SRC =	keymap_common.c \
 	matrix.c \
 	led.c
 
-KEYMAP ?= bjartek 
+KEYMAP ?= bjartek
 SRC := keymap_$(KEYMAP).c $(SRC)
 
 CONFIG_H = config.h
