@@ -38,8 +38,13 @@
 # To rebuild project do "make clean" then "make all".
 #----------------------------------------------------------------------------
 
-# Set to /dev/cu.usbmodem1421 or whatever on Macs
-USB ?= /dev/cu.usbmodem1441
+UNAME_S := $(shell uname -s)
+
+ifeq ($(UNAME_S),Darwin)
+    USB ?= /dev/cu.usbmodem1441
+ else
+    USB ?= /dev/ttyACM0
+ endif
 
 # Target file name (without extension).
 TARGET = atreus
@@ -55,7 +60,13 @@ SRC =	keymap_common.c \
 	matrix.c \
 	led.c
 
-KEYMAP ?= bjartek
+USER := $(shell whoami)
+ifneq ("$(wildcard keymap_$(USER).c)","")
+				KEYMAP ?= $(USER)
+else
+				KEYMAP ?= qwertysdf
+endif
+
 SRC := keymap_$(KEYMAP).c $(SRC)
 
 CONFIG_H = config.h
@@ -137,6 +148,9 @@ VPATH += $(TMK_DIR)
 ifdef TEENSY
 	OPT_DEFS += -DTEENSY -DBOOTLOADER_SIZE=512
 endif
+
+print-%  : ; @echo $* = $($*)
+
 
 build: $(TARGET).hex
 

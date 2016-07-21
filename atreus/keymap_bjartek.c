@@ -9,7 +9,7 @@
 
 #define AC_TAPK(key1, key2)  ACTION_MODS_TAP_KEY(MOD_##key1, AC_##key2)
 /* a macro for a layer switching key that can either be momentary or toggle  */
-#define AC_TAPT(layer) ACTION_LAYER_TAP_TOGGLE(##layer)
+#define AC_TAPT(layer) ACTION_LAYER_TAP_TOGGLE(layer)
 
 /*a macro for oneshot mods */
 #define AC_OSM(key) ACTION_MODS_ONESHOT(MOD_##key)
@@ -36,7 +36,7 @@ const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
          A, S, D, F, G, H, J, K, L, SCLN,         \
          Z, X, C, V, B, N, M, COMM, DOT, SLSH,    \
          TAPK(RALT,ESC), TAB, OSM(LGUI), OSM(LSFT), BSPC, OSM(LCTL), OSM(LALT),  \
-         SPC, LM1, MINS, QUOT, TAPK(RALT,ENT)),              \
+         SPC, TAPT(1), MINS, QUOT, TAPK(RALT,ENT)),              \
   /* 1: punctuation and numbers */
   FN_ARROW_LAYER,                                 \
   /* 2: arrows and function keys */

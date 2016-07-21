@@ -50,7 +50,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* period of tapping(ms) */
 #define TAPPING_TERM    300
 /* tap count needed for toggling a feature */
-#define TAPPING_TOGGLE  5
+#define TAPPING_TOGGLE  1
 /* Oneshot timeout(ms) */
 #define ONESHOT_TIMEOUT 300
 
