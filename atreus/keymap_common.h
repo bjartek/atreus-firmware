@@ -73,8 +73,20 @@ extern const uint16_t actionmaps[][MATRIX_ROWS][MATRIX_COLS];
 #define AC_ON(layer)  ACTION_LAYER_ON((layer), 1)
 #define AC_OFF(layer) ACTION_LAYER_OFF((layer), 1)
 #define AC_BOOT       ACTION_FUNCTION(BOOTLOADER)
+#define AC_TAP(layer, key)  ACTION_LAYER_TAP_KEY(layer, AC_##key) /* Enable Momentary Dual Function Modifiers from https://github.com/audibleblink/atreus-firmware */
 
-/* 
+#define AC_TAPK(key1, key2)  ACTION_MODS_TAP_KEY(MOD_##key1, AC_##key2) /* a macro for a layer switching key that can either be momentary or toggle  */
+#define AC_TAPT(layer) ACTION_LAYER_TAP_TOGGLE(layer) /*a macro for haveing momentary and tapping layer switch */
+#define AC_OSM(key) ACTION_MODS_ONESHOT(MOD_##key) /*a macro for oneshot mods */
+
+/* some macros to combine mods, perhaps enhance with variant with k suffix that takes a key? */
+#define AC_AC ACTION_MODS(MOD_LALT | MOD_LCTL)
+#define AC_CS ACTION_MODS(MOD_LSFT | MOD_LCTL)
+#define AC_AS ACTION_MODS(MOD_LALT | MOD_LSFT)
+#define AC_ACS ACTION_MODS(MOD_LALT | MOD_LCTL | MOD_LSFT)
+
+
+/*
  *  !    @      {     }     |       ||       _     7     8     9    *
  *  #    $      (     )     `       ||       -     4     5     6    +
  *  %    ^      [     ]     ~       ||       &     1     2     3    \

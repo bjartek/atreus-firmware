@@ -4,8 +4,6 @@ This repository contains firmware (called TMK) loaded into its
 controller to make the keyboard function. You can also use it to
 customize its layout or behavior. This branch makes use of the latest TMK release.
 
-This build is mainly geared to get the Atreus working on a Mac with a teensy 2 board. If you don't have a mac you are probably better of with [the original](https://github.com/technomancy/tmk_keyboard/).
-
 The main differences are:
 
 - Uses the latest branch of TMK
@@ -13,20 +11,21 @@ The main differences are:
 - Media keys enabled in build.
 - Updated keymap macros so keymaps are very easy to define.
 - The layers are not the same. I've been experimenting with it.
+- Try to guess the USB interface based upon uname, using usbmodem1441 on mac
+- If there is a keymap file that is the same as your username it is chosen by default
+- Move macros defined by alex/audibleblink and bjartek/me into common.h
 
 ### Installing on Mac OS X
 
 Install [homebrew](http://brew.sh/)
 
-    $ brew tap larsimmisch/avr
+    $ brew tap osx-cross/avr
     $ brew install avrdude
     $ brew install teensy_loader_cli
     $ brew install avr-libc
-    $ cd atreus 
-    $ OPT_DEFS=-DTEENSY make teensy KEYMAP=qwerty
-I
-*note: that you can build colemak by setting KEYMAP=colemak*    
-    
+    $ cd atreus
+    $ make upload KEYMAP=qwerty
+
 ### Layout
 
 Copy `keymap_qwerty.c` (or another) into a new file to create your new
