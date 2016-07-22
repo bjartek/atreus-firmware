@@ -35,7 +35,7 @@
 const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KEYMAP( /* 0: mostly letters */
 				 Q, W, E, R, T,            Y, U, I, O, P,            \
-         A, TAP(5,S), TAP(4,D), TAP(3,F), G,            H, J, K, L, SCLN,         \
+         TAP(6,A), TAP(5,S), TAP(4,D), TAP(3,F), G,            H, J, K, L, SCLN,         \
          Z, X, C, V, B,            N, M, COMM, DOT, SLSH,    \
          TAPK(RALT,ESC), TAB, OSM(LGUI), OSM(LSFT), BSPC, OSM(LCTL), OSM(LALT),  SPC, TAPT(1), MINS, QUOT, TAPK(RALT,ENT)
   ),
@@ -61,5 +61,10 @@ KEYMAP( /* movement pad while holding down s */
 	NO, NO, NO, NO, BOOT,      NO,   WL,   NO,   WR,    NO,   \
 	OFF(5), TAB, OSM(LGUI), OSM(LSFT), CS, OSM(LCTL), OSM(LALT), AS, AC, MINS, QUOT, TAPK(RALT,ENT)
 	),
-
+KEYMAP( /* mouse pad while holding down a */
+ NO,     NO   , NO   , NO   , NO                 , WH_D , BTN1   , MS_U , BTN2 , BTN3 , \
+ TRNS,   ACL0 , ACL1 , ACL2 , NO                 , WH_U , MS_L   , MS_D , MS_R , BTN4 , \
+ NO,     NO   , NO   , NO   , NO                 , NO   , WH_L   , NO   , WH_R , BTN5 , \
+ OFF(6), TAB, OSM(LGUI), OSM(LSFT), CS, OSM(LCTL), OSM(LALT), AS, AC, MINS, QUOT, TAPK(RALT,ENT)
+	),
 };
