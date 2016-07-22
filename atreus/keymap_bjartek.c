@@ -12,6 +12,7 @@
 /* bjartek atreus layout. The defalt layers are almost the samw as qwerty. The difference is:
  * - all the mods are oneshot. see here for information about this. https://github.com/tmk/tmk_keyboard/blob/master/tmk_core/doc/keymap.md
  * - holding esc or enter is ralt. i map ralt to norwegian letters in os.
+ * - on all but the main layer there are mappings for combining modifier keys.
  */
 
 const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
