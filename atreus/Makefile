@@ -64,7 +64,7 @@ USER := $(shell whoami)
 ifneq ("$(wildcard keymap_$(USER).c)","")
 				KEYMAP ?= $(USER)
 else
-				KEYMAP ?= qwertysdf
+				KEYMAP ?= qwerty
 endif
 
 SRC := keymap_$(KEYMAP).c $(SRC)
