@@ -20,13 +20,13 @@ const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
     Q,               W,        E,         R,         T,    /*|,, |*/             Y,   U,   I,    O,    P,    \
     TAP(5,A),        TAP(2,S), TAP(3,D),  TAP(4,F),  G,    /*|,, |*/             H,   J,   K,    L,    SCLN, \
     Z,               X,        C,         V,         B,    /*|,, |*/             N,   M,   COMM, DOT,  SLSH, \
-    TAPK(RALT, ESC), TAB,      OSM(LGUI), OSM(LSFT), BSPC, OSM(LCTL), OSM(LALT), SPC, LM1, MINS, QUOT, TAPK(RALT,ENT)
+    TAPK(RALT, ESC), TAB,      OSM(LGUI), OSM(LSFT), BSPC, OSM(LCTL), OSM(LALT), SPC, TAP(1,TAB), MINS, QUOT, TAPK(RALT,ENT)
   ),
   KEYMAP( /* layer one is mostly for programming and shell. lots of idea shortcute on left, not sure how much i will use them.*/
     SH(1),           CK(W),   CSK(F10),  CSK(N),    ACK(P),                   SH(6), SH(LBRC), SH(RBRC), SH(7),    SH(GRAVE), \
     CSK(A),          AK(ENT), ACK(N),    ACK(F),    CSK(ENT),                 0,     SH(9)   , SH(0),    SH(BSLS), SH(4), \
     TRNS,            CSK(F),  ACK(C),    ACK(V),    BOOT,                     GRAVE, LBRC    , RBRC,     SH(3),    SLSH, \
-    TAPK(RALT, ESC), TAB,     OSM(LGUI), OSM(LSFT), CS, OSM(LCTL), OSM(LALT), AS,    LM1,      MINS,     SH(2),     TAPK(RALT,ENT)
+    TAPK(RALT, ESC), TAB,     OSM(LGUI), OSM(LSFT), CS, OSM(LCTL), OSM(LALT), AS,    TRNS,      MINS,     SH(2),     TAPK(RALT,ENT)
   ),
   KEYMAP( /* FN pad while holding f */
     NO,     NO,    NO,        NO,        NO,                         F1,  F2,  F3,   F4,   F5,  \
