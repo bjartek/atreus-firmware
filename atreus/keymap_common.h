@@ -85,9 +85,6 @@ extern const uint16_t actionmaps[][MATRIX_ROWS][MATRIX_COLS];
 #define AC_AS ACTION_MODS(MOD_LALT | MOD_LSFT)
 #define AC_ACS ACTION_MODS(MOD_LALT | MOD_LCTL | MOD_LSFT)
 
-#define  AC_AK(key) ACTION_MODS_KEY(MOD_LALT,KC_##key)
-#define  AC_CK(key) ACTION_MODS_KEY(MOD_LCTL,KC_##key)
-#define  AC_SK(key) ACTION_MODS_KEY(MOD_LSFT,KC_##key)
 #define  AC_ACK(key) ACTION_MODS_KEY(MOD_LALT | MOD_LCTL,KC_##key)
 #define  AC_CSK(key) ACTION_MODS_KEY(MOD_LSFT | MOD_LCTL,KC_##key)
 #define  AC_ASK(key) ACTION_MODS_KEY(MOD_LALT | MOD_LSFT,KC_##key)
