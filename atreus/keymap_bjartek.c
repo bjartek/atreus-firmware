@@ -23,10 +23,10 @@ const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
     TAPK(RALT, ESC), TAB,      OSM(LGUI), OSM(LSFT), BSPC, OSM(LCTL), OSM(LALT), SPC, TAP(1,TAB), MINS, QUOT, TAPK(RALT,ENT)
   ),
   KEYMAP( /* layer one is mostly for programming and shell. lots of idea shortcute on left, not sure how much i will use them.*/
-    ALT(GRAVE),      CTRL(W),  CSK(F10),  ACSK(T),   ACSK(L), 	               SH(6), SH(LBRC), SH(RBRC), SH(7),    SH(1), \
-    CSK(A),          ALT(ENT), CTRL(SPC), CSK(F),    CSK(ENT),                 0,     SH(9)   , SH(0),    SH(BSLS), SH(4), \
-    GUI(1),          GUI(2),   GUI(3),    GUI(4),    BOOT,                     GRAVE, LBRC    , RBRC,     SH(3),    SH(GRAVE), \
-    TAPK(RALT, ESC), TAB,      OSM(LGUI), OSM(LSFT), CS, OSM(LCTL), OSM(LALT), AS,    TRNS,      MINS,     SH(2),   TAPK(RALT,ENT)
+    CSK(BSPC),       CTRL(W),    ACSK(T),    CSK(F10),    ACSK(L),                  SH(6), SH(LBRC), SH(RBRC), SH(7),    SH(1), \
+    CSK(A),          CSK(SPACE), CSK(ENT),   ALT(ENT),    ALT(INS),                 0,     SH(9)   , SH(0),    SH(BSLS), SH(4), \
+    ACSK(N),         CSK(F),     CSK(R),     ALT(GRAVE),  BOOT,                     GRAVE, LBRC    , RBRC,     SH(3),    SH(GRAVE), \
+    TAPK(RALT, ESC), TAB,        OSM(LGUI),  OSM(LSFT),   CS, OSM(LCTL), OSM(LALT), AS,    TRNS,      MINS,     SH(2),   TAPK(RALT,ENT)
   ),
   KEYMAP( /* FN pad while holding f */
     NO,     NO,    NO,        NO,        NO,                         F1,  F2,  F3,   F4,   F5,  \
