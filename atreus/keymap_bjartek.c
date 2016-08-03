@@ -35,9 +35,9 @@ const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
     OFF(2), TAB,   OSM(LGUI), OSM(LSFT), CS,   OSM(LCTL), OSM(LALT), AS,  AC,  MINS, QUOT, TAPK(RALT,ENT)
   ),
   KEYMAP( /* numpad while holding d */
-    NO,     NO,  NO,        NO,        NO,                       SH(GRAVE), 7  , 8  , 9, SH(8),     \
+    NO,     NO,  NO,        NO,        NO,                       SH(5),     7  , 8  , 9, SH(8),     \
     NO,     NO,  TRNS,      OSM(LGUI), NO,                       MINS     , 4  , 5  , 6, SH(EQUAL), \
-    NO,     NO,  NO,        NO,        BOOT,                     SH(5)    , 1  , 2  , 3, BSLS,      \
+    NO,     NO,  NO,        NO,        BOOT,                     NO       , 1  , 2  , 3, BSLS,      \
     OFF(3), TAB, OSM(LGUI), OSM(LSFT), CS, OSM(LCTL), OSM(LALT), AS,        AC,  DOT, 0, EQUAL
   ),
   KEYMAP( /* movement pad while holding down s */
