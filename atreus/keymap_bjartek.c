@@ -23,7 +23,7 @@ const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
     TAPK(RALT, ESC), TAB,      OSM(LGUI), OSM(LSFT), BSPC, OSM(LCTL), OSM(LALT), SPC, TAP(1,TAB), MINS, QUOT, TAPK(RALT,ENT)
   ),
   KEYMAP( /* layer one is mostly for programming and shell. lots of idea shortcute on left, not sure how much i will use them.*/
-    ACSK(Q),         CTRL(W),    ACSK(T),    CSK(F10),    ACSK(L),                  SH(6), SH(LBRC), SH(RBRC), SH(7),    SH(1), \
+    ACK(7),          CTRL(W),    ACSK(T),    CSK(F10),    ACSK(L),                  SH(6), SH(LBRC), SH(RBRC), SH(7),    SH(1), \
     CSK(A),          CSK(SPACE), CSK(ENT),   ALT(ENT),    ALT(INS),                 0,     SH(9)   , SH(0),    SH(BSLS), SH(4), \
     ACSK(N),         CSK(F),     CSK(R),     ALT(GRAVE),  BOOT,                     GRAVE, LBRC    , RBRC,     SH(3),    SH(GRAVE), \
     TAPK(RALT, ESC), TAB,        OSM(LGUI),  OSM(LSFT),   CS, OSM(LCTL), OSM(LALT), AS,    TRNS,      MINS,     SH(2),   TAPK(RALT,ENT)
@@ -53,3 +53,4 @@ const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
     OFF(5), TAB,   OSM(LGUI), OSM(LSFT), CS, OSM(LCTL), OSM(LALT), AS,    AC,      MINS,  QUOT,  TAPK(RALT,ENT)
   ),
 };
+
