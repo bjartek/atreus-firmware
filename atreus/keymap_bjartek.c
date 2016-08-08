@@ -23,9 +23,9 @@ const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
     TAPK(RALT, ESC), TAB,      OSM(LGUI), OSM(LSFT), BSPC, OSM(LCTL), OSM(LALT), SPC, TAP(1,TAB), MINS, QUOT, TAPK(RALT,ENT)
   ),
   KEYMAP( /* layer one is mostly for programming and shell. lots of idea shortcute on left, not sure how much i will use them.*/
-    ACK(7),          CTRL(W),    ACSK(T),    CSK(F10),    ACSK(L),                  SH(6), SH(LBRC), SH(RBRC), SH(7),    SH(1), \
+    ACK(7),          CTRL(W),    ACSK(T),    SH(F10),     ACSK(L),                  SH(6), SH(LBRC), SH(RBRC), SH(7),    SH(1), \
     CSK(A),          CSK(SPACE), CSK(ENT),   ALT(ENT),    ALT(INS),                 0,     SH(9)   , SH(0),    SH(BSLS), SH(4), \
-    ACSK(N),         CSK(F),     CSK(R),     ALT(GRAVE),  BOOT,                     GRAVE, LBRC    , RBRC,     SH(3),    SH(GRAVE), \
+    ACSK(N),         CSK(F),     CSK(R),     ALT(V),      BOOT,                     GRAVE, LBRC    , RBRC,     SH(3),    SH(GRAVE), \
     TAPK(RALT, ESC), TAB,        OSM(LGUI),  OSM(LSFT),   CS, OSM(LCTL), OSM(LALT), AS,    TRNS,      MINS,     SH(2),   TAPK(RALT,ENT)
   ),
   KEYMAP( /* FN pad while holding f */
@@ -41,10 +41,10 @@ const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
     OFF(3), TAB, OSM(LGUI), OSM(LSFT), CS, OSM(LCTL), OSM(LALT), AS,        AC,  DOT, 0, EQUAL
   ),
   KEYMAP( /* movement pad while holding down s */
-    NO,     NO,   NO,        NO,        NO,                       PGUP,HOME,      UP  ,      END  , INS,   \
-    NO,     NO,   NO,        TRNS,      NO,                       PGDN,LEFT,      DOWN,      RIGHT, DEL, \
-    NO,     NO,   NO,        NO,        BOOT,                     NO,  ACK(LEFT), CSK(BSPC), ACK(RIGHT),   NO,    \
-    OFF(4), TAB,  OSM(LGUI), OSM(LSFT), CS, OSM(LCTL), OSM(LALT), AS,  AC,        MINS,      QUOT,  TAPK(RALT,ENT)
+    NO,     NO,   NO,        NO,        NO,                       PGUP,   HOME,   UP  ,   END  ,  INS,   \
+    NO,     NO,   NO,        TRNS,      NO,                       PGDN,   LEFT,   DOWN,   RIGHT,  DEL, \
+    NO,     NO,   NO,        NO,        BOOT,                     GUI(1), GUI(2), GUI(3), GUI(4), GUI(5),    \
+    OFF(4), TAB,  OSM(LGUI), OSM(LSFT), CS, OSM(LCTL), OSM(LALT), AS,     AC,     MINS,   QUOT,   ACK(DEL)
   ),
   KEYMAP( /* mouse pad while holding down a */
     NO,     NO   , NO,        NO   ,     NO,                       WH_D , BTN1   , MS_U , BTN2 , BTN3 , \
