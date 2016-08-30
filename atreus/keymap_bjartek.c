@@ -42,7 +42,7 @@ const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   KEYMAP( /* movement pad while holding down s */
     NO,     NO,   NO,        NO,        NO,                       PGUP,   HOME,   UP  ,   END  ,  INS,   \
-    NO,     NO,   NO,        TRNS,      NO,                       PGDN,   LEFT,   DOWN,   RIGHT,  DEL, \
+    GSK(Q), NO,   NO,        TRNS,      NO,                       PGDN,   LEFT,   DOWN,   RIGHT,  DEL, \
     NO,     NO,   NO,        NO,        BOOT,                     GUI(1), GUI(2), GUI(3), GUI(4), GUI(5),    \
     OFF(4), TAB,  OSM(LGUI), OSM(LSFT), CS, OSM(LCTL), OSM(LALT), AS,     AC,     MINS,   QUOT,   ACK(DEL)
   ),
