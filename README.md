@@ -57,11 +57,9 @@ if you can't do it in software simply press the hardware reset button
 once.
 
 ### Bjartek layout
-My layout is using a lot of dual purpose keys, that is the keys mean something when hold and another when pressed.
-- all modifier keys are oneshot. Tap it and another key within a short while and the mod will be used for only that keypress
-- holding down esc or enter will produce ralt. I map norwegian letters to ralt in os.
-- i use 4 right hand only layers. I hold a key on the homerow on my left hand, the right is then a new layer. I use this for movement, numbers, fn keys and keyboard mouse.
-- my only other full layer is switched when holding fn. (tappning fn yields tab). This layer is for all special symbols and Idea actions.
-- on my right hand only lyaers i have bound some keys to several mods, so it easier to press difficult keybindngs in IDE. 
--
-
+- based upon norwegian layout in os since that is what all my coworkers use
+- layer 1 is idea shortcuts on the left and special characters on the right
+- layer 2 is movement keys on the left and numpad on the right
+- layer 3 is f keys on the left and mousepad on the right
+- all mods are oneshot
+- all layers are switched with holding down a key
