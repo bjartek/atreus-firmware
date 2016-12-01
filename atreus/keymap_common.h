@@ -66,7 +66,7 @@ extern const uint16_t actionmaps[][MATRIX_ROWS][MATRIX_COLS];
 #define AC_SH(key)    ACTION_MODS_KEY(MOD_LSFT, AC_##key)
 #define AC_CTRL(key)  ACTION_MODS_KEY(MOD_LCTL, AC_##key)
 #define AC_ALT(key)   ACTION_MODS_KEY(MOD_LALT, AC_##key)
-#define AC_RALT(key)   ACTION_MODS_KEY(MOD_RALT, AC_##key)
+#define AC_RA(key)    ACTION_MODS_KEY(MOD_RALT, AC_##key)
 #define AC_GUI(key)   ACTION_MODS_KEY(MOD_LGUI, AC_##key)
 #define AC_LM1        ACTION_LAYER_MOMENTARY(1)
 #define AC_LM2        ACTION_LAYER_MOMENTARY(2)

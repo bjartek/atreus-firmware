@@ -11,16 +11,16 @@
  */
 
 // Norwegian keyboard does not have the same posibilites as english does on some of the keys so on some mapping shift is not so usable
-#define AC_AA KC_LBRC
+#define AC_NO_AA KC_LBRC
 #define AC_NO_ACNT KC_RBRC
-#define AC_AE KC_QUOT
-#define AC_OE KC_SCLN
+#define AC_NO_AE KC_QUOT
+#define AC_NO_OE KC_SCLN
 #define AC_NO_LT KC_GRAVE
 #define AC_NO_PLUS KC_MINS
 #define AC_NO_BSLS KC_EQUAL
 #define AC_NO_QUOTE KC_BSLS
 #define AC_NO_MINS KC_SLSH
-#define AC_NO_PIPE KC_SLSH //not sure what to set this to
+#define AC_NO_PIPE KC_NONUS_BSLASH //not sure what to set this to
 
 const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KEYMAP( /* 0: mostly letters */
@@ -30,15 +30,15 @@ const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ESC, OSM(RALT), OSM(LGUI), OSM(LSFT), TAP(1,BSPC), OSM(LCTL), OSM(LALT), TAP(2,SPC), TAP(3,TAB), NO_MINS, SH(2), ENT
   ),
   KEYMAP( /* layer one is mostly for programming and shell. lots of idea shortcute on left, not sure how much i will use them.*/
-    ACK(7),  CTRL(W),    NO_AE,      SH(F10),     ACSK(L),                     SH(NO_ACNT), RALT(7), RALT(0), NO_OE,   SH(1), \
-    NO_AA,   CSK(SPACE), CSK(ENT),   ACSK(T),     ALT(INS),                    0,           SH(8)  , SH(9),   NO_PIPE, RALT(4), \
-    CSK(A),  CSK(F),     CSK(R),     ALT(V),      CSK(BSPC),                   SH(NO_BSLS), RALT(8), RALT(9), SH(6),   RALT(NO_ACNT), \
-    ESC,     OSM(RALT),  OSM(LGUI),  OSM(LSFT),   TRNS, OSM(LCTL), OSM(LALT),  SPC,         OFF(1) , RALT(2), NO_QUOTE,   SH(0)
+    ACK(7),  CTRL(W),    NO_AE,      SH(F10),     ACSK(L),                     SH(NO_ACNT), RA(7), RA(0), NO_OE,   SH(1), \
+    NO_AA,   CSK(SPACE), CSK(ENT),   ACSK(T),     ALT(INS),                    0,           SH(8)  , SH(9),   NO_PIPE, RA(4), \
+    CSK(A),  CSK(F),     CSK(R),     ALT(V),      CSK(BSPC),                   SH(NO_BSLS), RA(8), RA(9), SH(6),   RA(NO_ACNT), \
+    ESC,     OSM(RALT),  OSM(LGUI),  OSM(LSFT),   TRNS, OSM(LCTL), OSM(LALT),  SPC,         OFF(1) , RA(2), NO_QUOTE,   SH(0)
   ),
   KEYMAP( /* hold space brings up move pad and numpad */
     INS,      HOME,   UP  ,      END  ,     PGUP,                         SH(5),   7     , 8  , 9, SH(NO_QUOTE),     \
     DEL,      LEFT,   DOWN,      RIGHT,     PGDN,                         NO_MINS, 4     , 5  , 6, NO_PLUS, \
-    GUI(1),   GUI(2), GUI(3),    GUI(4),    GUI(5),                       RALT(4), 1     , 2  , 3, NO_BSLS,      \
+    GUI(1),   GUI(2), GUI(3),    GUI(4),    GUI(5),                       RA(4), 1     , 2  , 3, NO_BSLS,      \
     ACK(DEL), GUI(D), OSM(LGUI), OSM(LSFT), GSK(Q),OSM(LCTL), OSM(LALT),  TRNS,    OFF(1), DOT, 0, EQUAL
   ),
   KEYMAP( /* hold tab to have fpad and mouse */
