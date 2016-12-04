@@ -15,12 +15,12 @@
 #define AC_NO_ACNT KC_RBRC
 #define AC_NO_AE KC_QUOT
 #define AC_NO_OE KC_SCLN
-#define AC_NO_LT KC_GRAVE
+#define AC_NO_LT KC_NONUS_BSLASH
 #define AC_NO_PLUS KC_MINS
 #define AC_NO_BSLS KC_EQUAL
 #define AC_NO_QUOTE KC_BSLS
 #define AC_NO_MINS KC_SLSH
-#define AC_NO_PIPE KC_NONUS_BSLASH //not sure what to set this to
+#define AC_NO_PIPE KC_GRAVE
 
 const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KEYMAP( /* 0: mostly letters */
