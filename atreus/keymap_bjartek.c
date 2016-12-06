@@ -39,13 +39,13 @@ const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
     INS,      HOME,   UP  ,      END  ,     PGUP,                         SH(5),   7     , 8  , 9, SH(NO_QUOTE),     \
     DEL,      LEFT,   DOWN,      RIGHT,     PGDN,                         NO_MINS, 4     , 5  , 6, NO_PLUS, \
     GUI(1),   GUI(2), GUI(3),    GUI(4),    GUI(5),                       RA(4), 1     , 2  , 3, NO_BSLS,      \
-    ACK(DEL), GUI(D), OSM(LGUI), OSM(LSFT), GSK(Q),OSM(LCTL), OSM(LALT),  TRNS,    OFF(1), DOT, 0, EQUAL
+    ACK(DEL), GUI(D), OSM(LGUI), OSM(LSFT), GSK(Q),OSM(LCTL), OSM(LALT),  TRNS,    OFF(1), DOT, 0, SH(0)
   ),
   KEYMAP( /* hold tab to have fpad and mouse */
     F1,     F2,    F3,        F4,         F5,                             WH_D , BTN1   , MS_U , BTN2 , SH(3) , \
     F6,     F7,    F8,        F9,         F10,                            WH_U , MS_L   , MS_D , MS_R , BTN3 , \
     F11,    F12,   F13,       F14,        F15,                            NO   , ACL0   , NO_LT , SH(NO_LT) , SH(NO_PLUS) , \
-    BOOT, TAB,   OSM(LGUI), OSM(LSFT), CAPSLOCK, OSM(LCTL), OSM(LALT),    SPC  , TRNS   , MINS , SH(NO_BSLS), EQUAL
+    BOOT, TAB,   OSM(LGUI), OSM(LSFT), CAPSLOCK, OSM(LCTL), OSM(LALT),    SPC  , TRNS   , MINS , SH(NO_BSLS), SH(0)
   ),
 
 
