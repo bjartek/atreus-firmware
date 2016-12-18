@@ -25,8 +25,8 @@ const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   KEYMAP( /* layer one is mostly for programming and shell. lots of idea shortcute on left, not sure how much i will use them.*/
     ACK(7),  CTRL(W),    NO_AE,      SH(F10),     ACSK(L),                     SH(6), SH(LBRC), SH(RBRC), NO_OE,    SH(1), \
-    NO_AA,   CSK(SPACE), CSK(ENT),   ACSK(T),     ALT(INS),                    0,     SH(9)   , SH(0),    SH(BSLS), SH(4), \
-    CSK(A),  CSK(F),     CSK(R),     ALT(V),      CSK(BSPC),                   GRAVE, LBRC    , RBRC,     SH(7),    SH(GRAVE), \
+    NO_AA,   CA(LEFT),   CSK(ENT),   CA(RIGHT),   ALT(INS),                    0,     SH(9)   , SH(0),    SH(BSLS), SH(4), \
+    CSK(A),  CSK(F),     ACSK(T),    ALT(V),      CSK(BSPC),                   GRAVE, LBRC    , RBRC,     SH(7),    SH(GRAVE), \
     ESC,     OSM(RALT),  OSM(LGUI),  OSM(LSFT),   TRNS, OSM(LCTL), OSM(LALT),  SPC,   OFF(1) ,  SH(2),    SH(3),    EQUAL
   ),
   KEYMAP( /* hold space brings up move pad and numpad */
@@ -36,8 +36,8 @@ const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ACK(DEL), GUI(D), OSM(LGUI), OSM(LSFT), GSK(Q),OSM(LCTL), OSM(LALT),  TRNS, OFF(1), DOT, 0, EQUAL
   ),
   KEYMAP( /* hold tab to have fpad and mouse */
-    F1,     F2,    F3,        F4,         F5,                             WH_D , BTN1   , MS_U , BTN2 , BTN3 , \
-    F6,     F7,    F8,        F9,         F10,                            WH_U , MS_L   , MS_D , MS_R , BTN4 , \
+    F1,     F2,    F3,        F4,         F5,                             WH_D , BTN1   , MS_U , BTN2 , SH(3) , \
+    F6,     F7,    F8,        F9,         F10,                            WH_U , MS_L   , MS_D , MS_R , BTN3 , \
     F11,    F12,   F13,       F14,        F15,                            NO   , ACL0   , ACL1 , ACL2 , BTN5 , \
     BOOT, TAB,   OSM(LGUI), OSM(LSFT), CAPSLOCK, OSM(LCTL), OSM(LALT),    SPC  , TRNS   , MINS , QUOT, EQUAL
   ),
