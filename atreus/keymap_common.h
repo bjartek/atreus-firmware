@@ -81,7 +81,7 @@ extern const uint16_t actionmaps[][MATRIX_ROWS][MATRIX_COLS];
 #define AC_OSM(key) ACTION_MODS_ONESHOT(MOD_##key) /*a macro for oneshot mods */
 
 /* some macros to combine mods, perhaps enhance with variant with k suffix that takes a key? */
-#define AC_AC ACTION_MODS(MOD_LALT | MOD_LCTL)
+#define AC_CA ACTION_MODS(MOD_LALT | MOD_LCTL)
 #define AC_CS ACTION_MODS(MOD_LSFT | MOD_LCTL)
 #define AC_AS ACTION_MODS(MOD_LALT | MOD_LSFT)
 #define AC_ACS ACTION_MODS(MOD_LALT | MOD_LCTL | MOD_LSFT)
