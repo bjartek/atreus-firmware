@@ -32,7 +32,7 @@ const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KEYMAP( /* layer one is mostly for programming and shell. lots of idea shortcute on left, not sure how much i will use them.*/
     ACK(7),  CTRL(W),    NO_AE,      SH(F10),     ACSK(L),                     SH(NO_ACNT), RA(7), RA(0), NO_OE,   SH(1), \
     NO_AA,   ACK(LEFT),  CSK(ENT),   ACK(RIGHT),  ALT(INS),                    0,           SH(8)  , SH(9),   NO_PIPE, RA(4), \
-    CSK(A),  CSK(F),     ACSK(T),    ALT(V),      CSK(BSPC),                   SH(NO_BSLS), RA(8), RA(9), SH(6),   RA(NO_ACNT), \
+    CSK(A),  CSK(F),     ACSK(T),    ALT(V),      CTRL(F9),                    SH(NO_BSLS), RA(8), RA(9), SH(6),   RA(NO_ACNT), \
     ESC,     OSM(RALT),  OSM(LGUI),  OSM(LSFT),   TRNS, OSM(LCTL), OSM(LALT),  SPC,         OFF(1) , RA(2), NO_QUOTE,   SH(0)
   ),
   KEYMAP( /* hold space brings up move pad and numpad */
