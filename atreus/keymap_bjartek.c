@@ -36,10 +36,10 @@ const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ESC,     OSM(RALT),  OSM(LGUI),  OSM(LSFT),   TRNS, OSM(LCTL), OSM(LALT),  SPC,         OFF(1) , RA(2), NO_QUOTE,   SH(0)
   ),
   KEYMAP( /* hold space brings up move pad and numpad */
-    INS,      HOME,   UP  ,      END  ,     PGUP,                         SH(5),   7     , 8  , 9, SH(NO_QUOTE),     \
-    DEL,      LEFT,   DOWN,      RIGHT,     PGDN,                         NO_MINS, 4     , 5  , 6, NO_PLUS, \
-    GUI(1),   GUI(2), GUI(3),    GUI(4),    GUI(5),                       RA(4), 1     , 2  , 3, NO_BSLS,      \
-    ACK(DEL), GUI(D), OSM(LGUI), OSM(LSFT), GSK(Q),OSM(LCTL), OSM(LALT),  TRNS,    OFF(1), DOT, 0, SH(0)
+    INS,      HOME,   UP  ,      END  ,     PGUP,                          SH(5),   7     , 8  , 9, SH(NO_QUOTE),     \
+    DEL,      LEFT,   DOWN,      RIGHT,     PGDN,                          NO_MINS, 4     , 5  , 6, NO_PLUS, \
+    GUI(1),   GUI(2), GUI(3),    GUI(4),    GUI(5),                        RA(4),   1     , 2  , 3, NO_BSLS,      \
+    ACK(DEL), CSK(Q),OSM(LGUI), OSM(LSFT), GUI(D) ,OSM(LCTL), OSM(LALT),  TRNS,    OFF(1), DOT, 0, SH(0)
   ),
   KEYMAP( /* hold tab to have fpad and mouse */
     F1,     F2,    F3,        F4,         F5,                             WH_D , BTN1   , MS_U , BTN2 , SH(3) , \
