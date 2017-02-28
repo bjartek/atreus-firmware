@@ -23,7 +23,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define VENDOR_ID       0x16C0
 #define PRODUCT_ID      0x047C
 #define DEVICE_VER      36
-#define MANUFACTURER    pokowaka 
+#define MANUFACTURER    bjartek
 #define PRODUCT         Atreus
 #define DESCRIPTION     TMK keyboard firmware for Atreus
 
