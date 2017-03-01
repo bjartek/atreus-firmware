@@ -27,9 +27,9 @@
 
 const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KEYMAP( /* 0: mostly letters */
-    Q,   W,         E,         R,         T,   					 /*|,, |*/           Y,          U,          I,   		 O,    P,    \
-    A,   S,         D,         F,         G,   					 /*|,, |*/           H,          J,          K,   		 L,    COMM, \
-		TAPK(LSFT,Z),   X,         C,         V,         B,  /*|,, |*/           N,          M,       COMM,        DOT,  TAPK(LSFT, KP_SLASH), \
+    Q,   W,         E,         R,         T,   					 /*|,, |*/           Y,          U,          I,   		O,    P,    \
+    A,   S,         D,         F,         G,   					 /*|,, |*/           H,          J,          K,   	  L,    COMM, \
+		Z,   X,         C,         V,         B,  /*|,, |*/                      N,          M,          COMM,    DOT,  KP_SLASH, \
     ESC, OSM(RALT), OSM(LGUI), OSM(LSFT), TAP(1,BSPC), OSM(LCTL), OSM(LALT), TAP(2,SPC), TAP(3,TAB), NO_MINS, SH(2), ENT
   ),
   KEYMAP( /* layer one is mostly for programming and shell. lots of idea shortcute on left, not sure how much i will use them.*/
@@ -48,7 +48,7 @@ const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
     F1,     F2,    F3,        F4,         F5,                             WH_D , BTN1   , MS_U , BTN2 , SH(3) , \
     F6,     F7,    F8,        F9,         F10,                            WH_U , MS_L   , MS_D , MS_R , BTN3 , \
     F11,    F12,   F13,       F14,        BOOT,                           NO   , ACL0   , NO_LT , SH(NO_LT) , SH(NO_PLUS) , \
-    BOOT, TAB,   OSM(LGUI), OSM(LSFT), CAPSLOCK, OSM(LCTL), OSM(LALT),    SPC  , TRNS   , MINS , SH(NO_BSLS), KP_EQUAL
+    AS,     CA,    ACS, OSM(LSFT),    CS, OSM(LCTL), OSM(LALT),    SPC  , TRNS   , MINS , SH(NO_BSLS), KP_EQUAL
   ),
 
 
