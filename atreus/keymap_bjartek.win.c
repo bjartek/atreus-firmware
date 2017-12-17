@@ -28,27 +28,26 @@
 const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KEYMAP( /* 0: mostly letters */
     Q,   W,         E,         R,         T,   					 /*|,, |*/           Y,          U,          I,   		O,    P,    \
-    A,   S,         D,         F,         G,   					 /*|,, |*/           H,          J,          K,   	  L,    SCLN, \
-		Z,   X,         C,         V,         B,  /*|,, |*/                      N,          M,          COMM,    DOT,  SLSH, \
-    ESC, OSM(RALT), OSM(LGUI), OSM(LSFT), TAP(1,BSPC), OSM(LCTL), OSM(LALT), TAP(2,SPC), TAP(3,TAB), MINS, QUOT, ENT
+    A,   S,         D,         F,         G,   					 /*|,, |*/           H,          J,          K,   	  L,    COMM, \
+		Z,   X,         C,         V,         B,  /*|,, |*/                      N,          M,          COMM,    DOT,  KP_SLASH, \
+    ESC, OSM(RALT), OSM(LGUI), OSM(LSFT), TAP(1,BSPC), OSM(LCTL), OSM(LALT), TAP(2,SPC), TAP(3,TAB), NO_MINS, SH(2), ENT
   ),
-
   KEYMAP( /* layer one is mostly for programming and shell. lots of idea shortcute on left, not sure how much i will use them.*/
-		AGK(F7),  RA(UP),    RA(QUOT),   ACK(R),      AGSK(L),                     SH(6),       SH(LBRC), SH(RBRC), RA(O),    SH(1), \
-    RA(A),   GSK(LBRC),  CSK(ENT),   GSK(RBRC),   GUI(N),                      0,           SH((9),   SH(0),    SH(BSLS), SH(4), \
-    GSK(A),  GSK(F),     CTRL(T),    ALT(V),      CTRL(F9),                    GRAVE,       LBRC,     RBRC,     SH(7),    SH(GRAVE), \
-    ESC,     OSM(RALT),  OSM(LGUI),  OSM(LSFT),   TRNS, OSM(LCTL), OSM(LALT),  SPC,         OFF(1),   SH(2),    QUOT,     KP_EQUAL
+    ACK(7),  CTRL(W),    NO_AE,      SH(F10),     ACSK(L),                     SH(NO_ACNT), RA(7), RA(0), NO_OE,   SH(1), \
+    NO_AA,   ACK(LEFT),  CSK(ENT),   ACK(RIGHT),  ALT(INS),                    0,           SH(8)  , SH(9),   NO_PIPE, RA(4), \
+    CSK(A),  CSK(F),     ACSK(T),    ALT(V),      CTRL(F9),                    SH(NO_BSLS), RA(8), RA(9), SH(6),   RA(NO_ACNT), \
+    ESC,     OSM(RALT),  OSM(LGUI),  OSM(LSFT),   TRNS, OSM(LCTL), OSM(LALT),  SPC,         OFF(1) , RA(2), NO_QUOTE,   KP_EQUAL
   ),
   KEYMAP( /* hold space brings up move pad and numpad */
-    INS,      HOME,   UP  ,      END  ,     PGUP,                          SH(5),   7     , 8  , 9, SH(8),     \
-    DEL,      LEFT,   DOWN,      RIGHT,     PGDN,                          MINS,    4     , 5  , 6, PLUS, \
-    GUI(1),   GUI(2), GUI(3),    GUI(4),    GUI(5),                        SH(4),   1     , 2  , 3, BSLS,      \
+    INS,      HOME,   UP  ,      END  ,     PGUP,                          SH(5),   7     , 8  , 9, SH(NO_QUOTE),     \
+    DEL,      LEFT,   DOWN,      RIGHT,     PGDN,                          NO_MINS, 4     , 5  , 6, NO_PLUS, \
+    GUI(1),   GUI(2), GUI(3),    GUI(4),    GUI(5),                        RA(4),   1     , 2  , 3, NO_BSLS,      \
     ACK(DEL), GSK(Q),OSM(LGUI), OSM(LSFT), GUI(D) ,OSM(LCTL), OSM(LALT),  TRNS,    OFF(1), DOT, 0, KP_EQUAL
   ),
   KEYMAP( /* hold tab to have fpad and mouse */
     F1,     F2,    F3,        F4,         F5,                             WH_D , BTN1   , MS_U , BTN2 , SH(3) , \
     F6,     F7,    F8,        F9,         F10,                            WH_U , MS_L   , MS_D , MS_R , BTN3 , \
-    F11,    F12,   F13,       F14,        BOOT,                           NO   , ACL0   , NO ,   NO , NO , \
+    F11,    F12,   F13,       F14,        BOOT,                           NO   , ACL0   , NO_LT , SH(NO_LT) , SH(NO_PLUS) , \
     AS,     CA,    ACS, OSM(LSFT),    CS, OSM(LCTL), OSM(LALT),    SPC  , TRNS   , MINS , SH(NO_BSLS), KP_EQUAL
   ),
 
