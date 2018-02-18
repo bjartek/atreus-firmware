@@ -26,8 +26,8 @@ GA      , OSM(RALT), OSM(LCTL), OSM(LSFT), TRNS       , OSM(LGUI), OSM(LALT), SP
 KEYMAP(
 INS     , HOME     , UP       , END      , PGUP       ,                       SH(5)     , 7         , 8       , 9         , SH(8)    , \
 DEL     , LEFT     , DOWN     , RIGHT    , PGDN       ,                       MINS      , 4         , 5       , 6         , SH(EQUAL), \
-GUI(1)  , GUI(2)   , GUI(3)   , GUI(4)   , GUI(5)     ,                       SH(4)     , 1         , 2       , 3         , BSLS     , \
-GA      , OSM(RALT), OSM(LCTL), OSM(LSFT), CSK(SPC)   , OSM(LGUI), OSM(LALT), TRNS      , OFF(1)    , DOT     , 0         , KP_EQUAL),
+VOLU    , MPRV     , MPLY     , MNXT     , GSK(Q)     ,                       SH(4)     , 1         , 2       , 3         , BSLS     , \
+VOLD    , MUTE     , OSM(LCTL), OSM(LSFT), CSK(SPC)   , OSM(LGUI), OSM(LALT), TRNS      , OFF(1)    , DOT     , 0         , KP_EQUAL),
 
 KEYMAP(
 F1      , F2       , F3       , F4       , F5         ,                       WH_D      , BTN1      , MS_U    , BTN2      , SH(3)    , \
