@@ -42,7 +42,7 @@ UNAME_S := $(shell uname -s)
 
 ifeq ($(UNAME_S),Darwin)
     #USB ?= /dev/cu.usbmodem1441
-		USB ?= /dev/cu.usbmodem14111
+		USB ?= /dev/cu.usbmodem14511
  else
     USB ?= /dev/ttyACM0
  endif
