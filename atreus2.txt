@@ -1,0 +1,233 @@
+<F28>{
+  "keymap": [
+    {
+      "keyCode": 4672,
+      "label": "F7",
+      "extraLabel": "A+G+"
+    },
+    {
+      "keyCode": 4165,
+      "label": "F12",
+      "extraLabel": "G+"
+    },
+    {
+      "keyCode": 1076,
+      "label": "'",
+      "extraLabel": "AGr+"
+    },
+    {
+      "keyCode": 789,
+      "label": "R",
+      "extraLabel": "C+A+"
+    },
+    {
+      "keyCode": 4879,
+      "label": "L",
+      "extraLabel": "C+A+G+"
+    },
+    {
+      "keyCode": 0,
+      "label": "Blocked",
+      "verbose": "Disabled"
+    },
+    {
+      "keyCode": 0,
+      "label": "Blocked",
+      "verbose": "Disabled"
+    },
+    {
+      "keyCode": 2083,
+      "label": "^"
+    },
+    {
+      "keyCode": 2095,
+      "label": "{"
+    },
+    {
+      "keyCode": 2096,
+      "label": "}"
+    },
+    {
+      "keyCode": 1042,
+      "label": "O",
+      "extraLabel": "AGr+"
+    },
+    {
+      "keyCode": 2078,
+      "label": "!"
+    },
+    {
+      "keyCode": 1028,
+      "label": "A",
+      "extraLabel": "AGr+"
+    },
+    {
+      "keyCode": 4143,
+      "label": "[",
+      "extraLabel": "G+"
+    },
+    {
+      "keyCode": 2344,
+      "label": "Enter",
+      "extraLabel": "C+S+"
+    },
+    {
+      "keyCode": 4144,
+      "label": "]",
+      "extraLabel": "G+"
+    },
+    {
+      "keyCode": 6167,
+      "label": "#6167"
+    },
+    {
+      "keyCode": 0,
+      "label": "Blocked",
+      "verbose": "Disabled"
+    },
+    {
+      "keyCode": 0,
+      "label": "Blocked",
+      "verbose": "Disabled"
+    },
+    {
+      "keyCode": 39,
+      "label": "0",
+      "extraLabel": ")"
+    },
+    {
+      "keyCode": 2086,
+      "label": "("
+    },
+    {
+      "keyCode": 2087,
+      "label": ")"
+    },
+    {
+      "keyCode": 35,
+      "label": "6",
+      "extraLabel": "^"
+    },
+    {
+      "keyCode": 2081,
+      "label": "$"
+    },
+    {
+      "keyCode": 6148,
+      "label": "#6148"
+    },
+    {
+      "keyCode": 6153,
+      "label": "#6153"
+    },
+    {
+      "keyCode": 279,
+      "label": "T",
+      "extraLabel": "C+"
+    },
+    {
+      "keyCode": 537,
+      "label": "V",
+      "extraLabel": "A+"
+    },
+    {
+      "keyCode": 4162,
+      "label": "F9",
+      "extraLabel": "G+"
+    },
+    {
+      "keyCode": 2083,
+      "label": "^"
+    },
+    {
+      "keyCode": 2084,
+      "label": "&"
+    },
+    {
+      "keyCode": 53,
+      "label": "`"
+    },
+    {
+      "keyCode": 47,
+      "label": "["
+    },
+    {
+      "keyCode": 48,
+      "label": "]"
+    },
+    {
+      "keyCode": 32,
+      "label": "3",
+      "extraLabel": "#"
+    },
+    {
+      "keyCode": 2101,
+      "label": "~"
+    },
+    {
+      "keyCode": 226,
+      "label": "LAlt",
+      "verbose": "Left Alt"
+    },
+    {
+      "keyCode": 49155,
+      "label": "LAlt",
+      "extraLabel": "OSM",
+      "verbose": "Left Alt"
+    },
+    {
+      "keyCode": 49153,
+      "label": "LCtrl",
+      "extraLabel": "OSM",
+      "verbose": "Left Control"
+    },
+    {
+      "keyCode": 49154,
+      "label": "LShift",
+      "extraLabel": "OSM",
+      "verbose": "Left Shift"
+    },
+    {
+      "keyCode": 65535,
+      "label": "",
+      "verbose": "Transparent"
+    },
+    {
+      "keyCode": 49156,
+      "label": "LCmd",
+      "extraLabel": "OSM",
+      "verbose": "Left Cmd"
+    },
+    {
+      "keyCode": 49155,
+      "label": "LAlt",
+      "extraLabel": "OSM",
+      "verbose": "Left Alt"
+    },
+    {
+      "keyCode": 315,
+      "label": "F2",
+      "extraLabel": "C+"
+    },
+    {
+      "keyCode": 17492,
+      "label": "0",
+      "extraLabel": "MoveTo"
+    },
+    {
+      "keyCode": 2079,
+      "label": "@"
+    },
+    {
+      "keyCode": 52,
+      "label": "'"
+    },
+    {
+      "keyCode": 49156,
+      "label": "LCmd",
+      "extraLabel": "OSM",
+      "verbose": "Left Cmd"
+    }
+  ],
+  "palette": []
+}
